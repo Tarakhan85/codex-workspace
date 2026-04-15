@@ -1,14 +1,19 @@
-Task:
-Rebuild the provided 2D slide into a high-quality 3D version.
+## Smart Allocation Utility
 
-Rules:
-- Do NOT change any text
-- Do NOT correct spelling
-- Do NOT add or remove content
-- Do NOT move the layout
-- Do NOT distort machines
-- Do NOT add artistic or cartoon effects
+`smart_allocation.py` generates a discipline-balanced project allocation workbook from an input Excel sheet.
 
-Final goal:
-Same slide, same content, same layout, but rebuilt as a high-quality realistic 3D.
+### Usage
 
+```bash
+python smart_allocation.py \
+  --input-file PETROCAF_Final_Allocation_v2.xlsx \
+  --output-file PETROCAF_SMART_ALLOCATION.xlsx \
+  --sheet MASTER_ALL \
+  --projects NEAG_1_EPF DAHSHOUR_16IN_PIPELINE ALEX_FIRE_FIGHTING GAMSA_CHEMICAL
+```
+
+### Output sheets
+
+- `Management`: personnel classified as Management.
+- `Project_Allocation`: discipline-distributed engineering personnel with `Assigned Project`.
+- `Balance_Check`: project-level discipline counts for validation.
