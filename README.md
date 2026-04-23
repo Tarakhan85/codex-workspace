@@ -12,3 +12,7 @@ Rules:
 Final goal:
 Same slide, same content, same layout, but rebuilt as a high-quality realistic 3D.
 
+---
+
+Additional internal reference:
+- `PETROCAF_MASTER_ORCHESTRATOR_TEMPLATE.md`: structured workflow and response template for PETROCAF master orchestration tasks.
